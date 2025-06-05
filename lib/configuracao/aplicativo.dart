@@ -12,7 +12,9 @@ class Aplicativo extends StatelessWidget {
       theme: ThemeData(colorScheme: const ColorScheme.light()),
       debugShowCheckedModeBanner: false,
       initialRoute: Rotas.home,
-      routes: {},
+      routes: {
+        Rotas.home: (context) => const TelaDashboard(),
+      },
       home: const TelaDashboard(),
     );
   }
