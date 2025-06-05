@@ -1,4 +1,4 @@
-# flutter_application_1
+# Spin Flow
 
 A new Flutter project.
 
