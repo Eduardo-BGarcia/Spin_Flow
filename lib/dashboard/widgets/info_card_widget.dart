@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:spin_flow/dashboard/classes/info_card_classe.dart';
-
+import 'package:spin_flow/entities/DTOInfoCard.dart';
 
 class InfoCardWidget extends StatelessWidget {
-  final InfoCardModel model;
+  final DTOInfoCard model;
 
   const InfoCardWidget({super.key, required this.model});
 

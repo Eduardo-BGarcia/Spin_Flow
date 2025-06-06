@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:spin_flow/dashboard/classes/cadastro_classe.dart';
+import 'package:spin_flow/entities/DTOcadastro.dart';
 
 class CadastroTile extends StatelessWidget {
-  final CadastroTileModel model;
+  final DTOcadastro model;
 
   const CadastroTile({super.key, required this.model});
 
