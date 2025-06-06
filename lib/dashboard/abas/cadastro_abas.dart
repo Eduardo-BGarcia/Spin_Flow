@@ -1,26 +1,26 @@
 import 'package:flutter/material.dart';
 import 'package:spin_flow/configuracao/rotas.dart';
-import 'package:spin_flow/dashboard/classes/cadastro_classe.dart';
 import 'package:spin_flow/dashboard/widgets/cadastro_tile.dart';
+import 'package:spin_flow/entities/DTOcadastro.dart';
 
 class CadastrosAbas extends StatelessWidget {
   CadastrosAbas({super.key});
 
-  final List<CadastroTileModel> _items = [
-    CadastroTileModel(
+  final List<DTOcadastro> _items = [
+    DTOcadastro(
         icon: Icons.video_library_outlined, title: 'Vídeo Aula', routeName: ''),
-    CadastroTileModel(
+    DTOcadastro(
         icon: Icons.person_add_alt_1_outlined, title: 'Aluno', routeName: ''),
-    CadastroTileModel(
+    DTOcadastro(
         icon: Icons.business_outlined, title: 'Fabricante', routeName: Rotas.cadastroFabricante),
-    CadastroTileModel(
+    DTOcadastro(
       icon: Icons.door_back_door_outlined, title: 'Sala', routeName: Rotas.cadastroSala),
-    CadastroTileModel(
+    DTOcadastro(
         icon: Icons.build_outlined,
         title: 'Tipo de Manutenção',
         routeName: Rotas.cadastroTipoManutencao),
     // ... adicione todos os outros itens aqui
-    CadastroTileModel(
+    DTOcadastro(
         icon: Icons.groups_outlined, title: 'Grupo Aluno', routeName: ''),
   ];
 
