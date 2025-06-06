@@ -4,7 +4,7 @@ class DTOcadastro {
   final IconData icon;
   final String title;
   final String
-      routeName; // Usamos a rota em vez de um callback para um modelo mais limpo
+      routeName;
 
   DTOcadastro({
     required this.icon,
