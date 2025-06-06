@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:spin_flow/configuracao/rotas.dart';
 
 class TelaDashboard extends StatefulWidget {
   const TelaDashboard({super.key});
@@ -30,7 +31,8 @@ class _TelaDashboardState extends State<TelaDashboard>
     required IconData icon,
     required String value,
     required String title,
-    required Color color, // Mantida para diferenciação, mas pode ser padronizada
+    required Color
+        color, // Mantida para diferenciação, mas pode ser padronizada
   }) {
     return Card(
       elevation: 2.0, // Elevação sutil
@@ -79,8 +81,7 @@ class _TelaDashboardState extends State<TelaDashboard>
       title: Text(
         title,
         style: TextStyle(
-            fontSize: 16,
-            color: Theme.of(context).textTheme.bodyLarge?.color),
+            fontSize: 16, color: Theme.of(context).textTheme.bodyLarge?.color),
       ),
       onTap: onTap,
       // trailing: const Icon(Icons.arrow_forward_ios, size: 16.0), // Removido para minimalismo
@@ -111,7 +112,8 @@ class _TelaDashboardState extends State<TelaDashboard>
       childAspectRatio: 1.1, // Ajuste para proporção
       children: [
         _infoCard(
-          icon: Icons.message_outlined, // Ícones Outlined para um look mais leve
+          icon:
+              Icons.message_outlined, // Ícones Outlined para um look mais leve
           value: '3',
           title: 'Recados',
           color: Colors.orange.shade700,
@@ -150,11 +152,11 @@ class _TelaDashboardState extends State<TelaDashboard>
       _cadastroTile(
           icon: Icons.video_library_outlined,
           title: 'Vídeo Aula',
-          onTap: () => Navigator.pushNamed(context, '')),
+          onTap: () => Navigator.pushNamed(context, Rotas.videoAulaForm)),
       _cadastroTile(
           icon: Icons.person_add_alt_1_outlined,
           title: 'Aluno',
-          onTap: () => Navigator.pushNamed(context, '')),
+          onTap: () => Navigator.pushNamed(context, Rotas.alunoForm)),
       _cadastroTile(
           icon: Icons.business_outlined,
           title: 'Fabricante',
@@ -263,19 +265,25 @@ class _TelaDashboardState extends State<TelaDashboard>
               ),
             ),
             ListTile(
-              leading: Icon(Icons.home_outlined, color: theme.colorScheme.primary),
-              title: Text('Início', style: TextStyle(color: theme.textTheme.bodyLarge?.color)),
+              leading:
+                  Icon(Icons.home_outlined, color: theme.colorScheme.primary),
+              title: Text('Início',
+                  style: TextStyle(color: theme.textTheme.bodyLarge?.color)),
               onTap: () => Navigator.pushNamed(context, '/home'),
             ),
             ListTile(
-              leading: Icon(Icons.settings_outlined, color: theme.colorScheme.primary),
-              title: Text('Configurações', style: TextStyle(color: theme.textTheme.bodyLarge?.color)),
+              leading: Icon(Icons.settings_outlined,
+                  color: theme.colorScheme.primary),
+              title: Text('Configurações',
+                  style: TextStyle(color: theme.textTheme.bodyLarge?.color)),
               onTap: () => Navigator.pushNamed(context, '/configuracoes'),
             ),
             const Divider(),
             ListTile(
-              leading: Icon(Icons.logout_outlined, color: theme.colorScheme.error),
-              title: Text('Sair', style: TextStyle(color: theme.colorScheme.error)),
+              leading:
+                  Icon(Icons.logout_outlined, color: theme.colorScheme.error),
+              title: Text('Sair',
+                  style: TextStyle(color: theme.colorScheme.error)),
               onTap: () => Navigator.pushNamed(context, '/logout'),
             ),
           ],
@@ -289,7 +297,8 @@ class _TelaDashboardState extends State<TelaDashboard>
         ),
         backgroundColor: theme.colorScheme.surface, // AppBar com a cor de fundo
         elevation: 0, // Sem sombra para um visual mais plano
-        iconTheme: IconThemeData(color: theme.colorScheme.onSurface), // Cor do ícone do drawer
+        iconTheme: IconThemeData(
+            color: theme.colorScheme.onSurface), // Cor do ícone do drawer
         bottom: TabBar(
           controller: _tabController,
           isScrollable: true,

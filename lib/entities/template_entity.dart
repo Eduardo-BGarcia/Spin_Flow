@@ -1,4 +1,4 @@
-class TemplateEntity {
+class DTOTemplate {
   final String id;
   final String name;
   final String? description;
@@ -8,7 +8,7 @@ class TemplateEntity {
   final DateTime? deletedAt;
   final bool isActive;
 
-  TemplateEntity({
+  DTOTemplate({
     required this.id,
     required this.name,
     required this.description,
