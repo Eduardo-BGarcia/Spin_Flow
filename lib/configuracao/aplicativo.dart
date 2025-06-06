@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:spin_flow/configuracao/rotas.dart';
+import 'package:spin_flow/telas/cadastro-sala.dart';
 import 'package:spin_flow/telas/dashboard.dart';
 
 class Aplicativo extends StatelessWidget {
@@ -14,6 +15,7 @@ class Aplicativo extends StatelessWidget {
       initialRoute: Rotas.home,
       routes: {
         Rotas.home: (context) => const TelaDashboard(),
+        Rotas.cadastroSala: (context) => const FormSala(),
       },
       home: const TelaDashboard(),
     );
