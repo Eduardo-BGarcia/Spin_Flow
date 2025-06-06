@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:spin_flow/configuracao/rotas.dart';
 
 class TelaDashboard extends StatefulWidget {
   const TelaDashboard({super.key});
@@ -166,11 +167,11 @@ class _TelaDashboardState extends State<TelaDashboard>
       _cadastroTile(
           icon: Icons.build_outlined,
           title: 'Tipo Manutenção',
-          onTap: () => Navigator.pushNamed(context, '')),
+          onTap: () => Navigator.pushNamed(context, Rotas.tipoManutencao)),
       _cadastroTile(
           icon: Icons.library_music_outlined,
           title: 'Categoria Música',
-          onTap: () => Navigator.pushNamed(context, '')),
+          onTap: () => Navigator.pushNamed(context, Rotas.categoriaMusica)),
       _cadastroTile(
           icon: Icons.group_work_outlined,
           title: 'Banda/Artista',
