@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:spin_flow/configuracao/rotas.dart';
+import 'package:spin_flow/telas/cadastro-fabricante.dart';
 import 'package:spin_flow/telas/cadastro-sala.dart';
 import 'package:spin_flow/dashboard/tela/dashboard_tela.dart';
+import 'package:spin_flow/telas/cadastro-tipo-manutencao.dart';
 
 class Aplicativo extends StatelessWidget {
   const Aplicativo({super.key});
@@ -16,8 +18,10 @@ class Aplicativo extends StatelessWidget {
       routes: {
         Rotas.home: (context) => const DashboardTela(),
         Rotas.cadastroSala: (context) => const FormSala(),
+        Rotas.cadastroTipoManutencao: (context) => const FormTipoManutencao(),
+        Rotas.cadastroFabricante: (context) => const FormFabricante(),
       },
-      home: const DashboardTela(),
+
     );
   }
 }

@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:spin_flow/dashboard/abas/aulas_abas.dart';
+import 'package:spin_flow/dashboard/abas/cadastro_abas.dart';
+import 'package:spin_flow/dashboard/abas/visao_geral_abas.dart';
 import 'package:spin_flow/dashboard/widgets/app_drawer.dart';
 
 
@@ -60,12 +63,12 @@ class _DashboardScreenState extends State<DashboardTela>
       // 2. Usando os widgets de cada aba
       body: TabBarView(
         controller: _tabController,
-        children: const [
-          //VisaoGeralTab(),
-          //CadastrosTab(),
-          //AulasTab(), // Você vai criar este widget
-          //ManutencaoTab(), // Você vai criar este widget
-          //RecadosTab(), // Você vai criar este widget
+        children:  [
+          VisaoGeralAbas(),
+          CadastrosAbas(),
+          AulasAbas(),
+
+
         ],
       ),
     );
