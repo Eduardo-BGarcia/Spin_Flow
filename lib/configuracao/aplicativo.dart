@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:spin_flow/configuracao/rotas.dart';
 import 'package:spin_flow/telas/cadastro-sala.dart';
-import 'package:spin_flow/telas/dashboard.dart';
+import 'package:spin_flow/dashboard/tela/dashboard_tela.dart';
 
 class Aplicativo extends StatelessWidget {
   const Aplicativo({super.key});
@@ -14,10 +14,10 @@ class Aplicativo extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: Rotas.home,
       routes: {
-        Rotas.home: (context) => const TelaDashboard(),
+        Rotas.home: (context) => const DashboardTela(),
         Rotas.cadastroSala: (context) => const FormSala(),
       },
-      home: const TelaDashboard(),
+      home: const DashboardTela(),
     );
   }
 }
