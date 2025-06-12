@@ -35,6 +35,7 @@ dependencies:
   cupertino_icons: ^1.0.8
   brasil_fields: ^1.18.0
   sqflite:
+  path:
   sqflite_common_ffi:
   sqflite_common_ffi_web:
   mask_text_input_formatter:
