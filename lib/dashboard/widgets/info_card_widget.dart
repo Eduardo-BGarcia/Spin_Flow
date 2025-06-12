@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:spin_flow/entities/DTOInfoCard.dart';
+import 'package:spin_flow/DTO/DTOInfoCard.dart';
 
 class InfoCardWidget extends StatelessWidget {
   final DTOInfoCard model;

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:spin_flow/entities/DTOInfoCard.dart';
+import 'package:spin_flow/DTO/DTOInfoCard.dart';
 import 'package:spin_flow/dashboard/widgets/info_card_widget.dart';
 
 class VisaoGeralAbas extends StatelessWidget {

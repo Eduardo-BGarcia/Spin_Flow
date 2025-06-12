@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:spin_flow/configuracao/rotas.dart';
 import 'package:spin_flow/dashboard/widgets/cadastro_tile.dart';
-import 'package:spin_flow/entities/DTOcadastro.dart';
+import 'package:spin_flow/DTO/DTOcadastro.dart';
 
 class CadastrosAbas extends StatelessWidget {
   CadastrosAbas({super.key});
@@ -12,9 +12,13 @@ class CadastrosAbas extends StatelessWidget {
     DTOcadastro(
         icon: Icons.person_add_alt_1_outlined, title: 'Aluno', routeName: ''),
     DTOcadastro(
-        icon: Icons.business_outlined, title: 'Fabricante', routeName: Rotas.listaFabricante),
+        icon: Icons.business_outlined,
+        title: 'Fabricante',
+        routeName: Rotas.listaFabricante),
     DTOcadastro(
-      icon: Icons.door_back_door_outlined, title: 'Sala', routeName: Rotas.cadastroSala),
+        icon: Icons.door_back_door_outlined,
+        title: 'Sala',
+        routeName: Rotas.cadastroSala),
     DTOcadastro(
         icon: Icons.build_outlined,
         title: 'Tipo de Manutenção',
