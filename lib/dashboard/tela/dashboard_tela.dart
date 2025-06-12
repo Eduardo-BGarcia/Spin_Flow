@@ -4,6 +4,9 @@ import 'package:spin_flow/dashboard/abas/cadastro_abas.dart';
 import 'package:spin_flow/dashboard/abas/manutencao_abas.dart';
 import 'package:spin_flow/dashboard/abas/recados_abas.dart';
 import 'package:spin_flow/dashboard/abas/visao_geral_abas.dart';
+import 'package:spin_flow/dashboard/abas/aulas_abas.dart';
+import 'package:spin_flow/dashboard/abas/cadastro_abas.dart';
+import 'package:spin_flow/dashboard/abas/visao_geral_abas.dart';
 import 'package:spin_flow/dashboard/widgets/app_drawer.dart';
 
 class DashboardTela extends StatefulWidget {
@@ -67,9 +70,9 @@ class _DashboardScreenState extends State<DashboardTela>
         children: [
           VisaoGeralAbas(),
           CadastrosAbas(),
-          AulasAbas(), // Você vai criar este widget
-          ManutencaoAbas(), // Você vai criar este widget
-          RecadosAbas(), // Você vai criar este widget
+          const AulasAbas(), // Você vai criar este widget
+          const ManutencaoAbas(), // Você vai criar este widget
+          const RecadosAbas(), // Você vai criar este widget
         ],
       ),
     );
