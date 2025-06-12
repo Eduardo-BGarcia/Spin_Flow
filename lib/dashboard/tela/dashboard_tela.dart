@@ -70,9 +70,9 @@ class _DashboardScreenState extends State<DashboardTela>
         children: [
           VisaoGeralAbas(),
           CadastrosAbas(),
-          AulasAbas(), // Você vai criar este widget
-          ManutencaoAbas(), // Você vai criar este widget
-          RecadosAbas(), // Você vai criar este widget
+          const AulasAbas(), // Você vai criar este widget
+          const ManutencaoAbas(), // Você vai criar este widget
+          const RecadosAbas(), // Você vai criar este widget
         ],
       ),
     );

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:spin_flow/DTO/listas/lista_fabricante.dart';
 import 'package:spin_flow/configuracao/rotas.dart';
 import 'package:spin_flow/telas/cadastro-fabricante.dart';
 import 'package:spin_flow/telas/cadastro-sala.dart';
@@ -20,6 +21,7 @@ class Aplicativo extends StatelessWidget {
         Rotas.cadastroSala: (context) => const FormSala(),
         Rotas.cadastroTipoManutencao: (context) => const FormTipoManutencao(),
         Rotas.cadastroFabricante: (context) => const FormFabricante(),
+        Rotas.listaFabricante: (context) => const ListaFabricante()
       },
 
     );

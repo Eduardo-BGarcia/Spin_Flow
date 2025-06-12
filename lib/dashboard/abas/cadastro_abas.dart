@@ -12,7 +12,7 @@ class CadastrosAbas extends StatelessWidget {
     DTOcadastro(
         icon: Icons.person_add_alt_1_outlined, title: 'Aluno', routeName: ''),
     DTOcadastro(
-        icon: Icons.business_outlined, title: 'Fabricante', routeName: Rotas.cadastroFabricante),
+        icon: Icons.business_outlined, title: 'Fabricante', routeName: Rotas.listaFabricante),
     DTOcadastro(
       icon: Icons.door_back_door_outlined, title: 'Sala', routeName: Rotas.cadastroSala),
     DTOcadastro(

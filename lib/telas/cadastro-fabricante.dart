@@ -2,6 +2,7 @@ import 'package:brasil_fields/brasil_fields.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:spin_flow/DTO/DTOfabricante.dart';
+import 'package:spin_flow/configuracao/rotas.dart';
 
 
 class FormFabricante extends StatefulWidget {
@@ -143,7 +144,10 @@ class _FormFabricanteState extends State<FormFabricante> {
               ),
               const SizedBox(height: 20),
               ElevatedButton(
-                onPressed: _salvar,
+                onPressed: (){
+                  _salvar;
+                  Navigator.pushNamed(context, Rotas.listaFabricante);
+                  },
                 child: const Text('Salvar'),
               ),
             ],
