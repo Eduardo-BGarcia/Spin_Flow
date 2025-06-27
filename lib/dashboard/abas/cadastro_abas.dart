@@ -8,7 +8,9 @@ class CadastrosAbas extends StatelessWidget {
 
   final List<DTOcadastro> _items = [
     DTOcadastro(
-        icon: Icons.video_library_outlined, title: 'Vídeo Aula', routeName: ''),
+        icon: Icons.video_library_outlined,
+        title: 'Vídeo Aula',
+        routeName: Rotas.cadastroVideoAula),
     DTOcadastro(
         icon: Icons.person_add_alt_1_outlined, title: 'Aluno', routeName: ''),
     DTOcadastro(
